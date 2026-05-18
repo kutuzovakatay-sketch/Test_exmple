@@ -1,0 +1,18 @@
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 3rem;
+
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+
+    button{
+        height: 40px;
+        border-radius: 10px;
+        background-color: #ccc;
+        margin-bottom: 20px;
+        border: none;
+    }
+}

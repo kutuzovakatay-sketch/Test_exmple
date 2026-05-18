@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fullName": "Мария Петрова",
+      "email": "maria@example.com",
+      "registrationDate": "2024-02-20"
+    },
+    {
+      "id": "2",
+      "fullName": "Екатерина Кутузова",
+      "email": "maria@example.com",
+      "registrationDate": "2024-02-20"
+    },
+    {
+      "id": "3",
+      "fullName": "Ольга Петькина",
+      "email": "maria@example.com",
+      "registrationDate": "2024-02-20"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

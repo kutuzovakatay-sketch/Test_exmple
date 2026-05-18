@@ -1,0 +1,9 @@
+<h2>Детали пользователя</h2>
+<div *ngIf="user; else loading">
+  <p><strong>ФИО:</strong> {{ user.fullName }}</p>
+  <p><strong>Email:</strong> {{ user.email }}</p>
+  <p><strong>Дата регистрации:</strong> {{ user.registrationDate | date }}</p>
+  <button routerLink="/users">Назад к списку</button>
+  <button [routerLink]="['/user-form', user.id]">Редактировать</button>
+</div>
+<ng-template #loading>Загрузка...</ng-template>
