@@ -50,9 +50,9 @@
     margin-bottom: 2rem;
 
     button {
-      background-color: #17a2b8;
+      background-color: transparent;
       border: none;
-      color: #ffffff;
+      color: #138496;
       font-size: 0.9rem;
       font-weight: 500;
       cursor: pointer;
@@ -61,7 +61,7 @@
       transition: background-color 0.2s;
 
       &:hover {
-        background-color: #138496;
+        background-color: #e8e8e8;
       }
     }
   }

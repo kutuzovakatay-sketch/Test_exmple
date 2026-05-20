@@ -1,25 +1,58 @@
 {
   "users": [
     {
-      "id": "1",
-      "fullName": "Мария Петрова",
-      "email": "maria@example.com",
-      "registrationDate": "2024-02-20",
-      "dateBirth": "02.04.2000"
-    },
-    {
       "id": "2",
-      "fullName": "Екатерина Кутузова",
-      "email": "maria@example.com",
-      "registrationDate": "2024-02-20",
-      "dateBirth": "28.05.2005"
+      "fullName": "Иван Соколов",
+      "email": "ivan.sokolov@example.com",
+      "registrationDate": "10.03.2024",
+      "dateBirth": "05.11.1988",
+      "age": 37,
+      "education": "Магистр техники"
     },
     {
-      "id": "3",
-      "fullName": "Денис Кутузов",
-      "email": "maria@example.com",
-      "registrationDate": "2024-02-20",
-      "dateBirth": "20.09.1998"
+      "fullName": "Екатерина Кутузова",
+      "email": "ekaterina.k@example.com",
+      "dateBirth": "2005-05-28",
+      "education": "Бакалавр экономики",
+      "age": 25,
+      "registrationDate": "15.01.2024",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "fullName": "Алексей Морозов",
+      "email": "alexey.m@example.com",
+      "registrationDate": "05.04.2024",
+      "dateBirth": "01.12.1992",
+      "age": 33,
+      "education": "Среднее специальное"
+    },
+    {
+      "id": "5",
+      "fullName": "Ольга Новикова",
+      "email": "olga.novikova@example.com",
+      "registrationDate": "20.05.2024",
+      "dateBirth": "23.09.1985",
+      "age": 40,
+      "education": "Высшее (СПбГУ)"
+    },
+    {
+      "id": "7",
+      "fullName": "Анна Ветрова",
+      "email": "anna.vetrova@example.com",
+      "registrationDate": "10.06.2024",
+      "dateBirth": "14.03.2002",
+      "age": 24,
+      "education": "Студентка"
+    },
+    {
+      "fullName": "Ольга Кутузова",
+      "email": "njjvndkjn@gmail.com",
+      "dateBirth": "1983-05-19",
+      "education": "СПО Кондитер",
+      "age": 43,
+      "registrationDate": "2026-05-20",
+      "id": "S1w9rzFsYnI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

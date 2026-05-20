@@ -6,7 +6,7 @@ import { UserList } from './components/user-list/user-list';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, UserList, UserProfile],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

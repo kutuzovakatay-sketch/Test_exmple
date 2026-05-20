@@ -27,20 +27,20 @@ export class UserProfile implements OnInit, OnDestroy{
 
   ngOnInit(): void {
     console.log('UserProfile ngOnInit вызван');
-    // Подписываемся на изменения параметров маршрута
+
     this.paramSub = this.route.paramMap.subscribe(params => {
       const id = params.get('id');
       console.log('paramMap получил id:', id);
 
       if (id) {
-        this.loadUser(+id);
+        this.loadUser(id);
       }
     });
   }
 
-  loadUser(id: number): void {
+  loadUser(id: string): void {
     console.log('loadUser вызван с id:', id);
-    this.user = null; // очищаем предыдущие данные, чтобы показать "Загрузка..."
+    this.user = null; 
     this.userService.getUser(id).subscribe({
       next: (user) => {
         this.user = user,
@@ -53,7 +53,7 @@ export class UserProfile implements OnInit, OnDestroy{
   }
 
   ngOnDestroy(): void {
-    // Отписываемся, чтобы избежать утечек памяти
+
     if (this.paramSub) {
       this.paramSub.unsubscribe();
     }
