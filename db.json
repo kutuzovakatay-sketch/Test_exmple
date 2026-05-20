@@ -4,19 +4,22 @@
       "id": "1",
       "fullName": "Мария Петрова",
       "email": "maria@example.com",
-      "registrationDate": "2024-02-20"
+      "registrationDate": "2024-02-20",
+      "dateBirth": "02.04.2000"
     },
     {
       "id": "2",
       "fullName": "Екатерина Кутузова",
       "email": "maria@example.com",
-      "registrationDate": "2024-02-20"
+      "registrationDate": "2024-02-20",
+      "dateBirth": "28.05.2005"
     },
     {
       "id": "3",
-      "fullName": "Ольга Петькина",
+      "fullName": "Денис Кутузов",
       "email": "maria@example.com",
-      "registrationDate": "2024-02-20"
+      "registrationDate": "2024-02-20",
+      "dateBirth": "20.09.1998"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

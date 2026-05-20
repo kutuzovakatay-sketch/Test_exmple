@@ -1,0 +1,92 @@
+.profile-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.user-details-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem 1.5rem;
+  position: relative;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #2c3e50;
+    border-left: 5px solid #04B07B;
+    padding-left: 1rem;
+  }
+
+  .user-info {
+    margin-bottom: 2rem;
+
+    p {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0.75rem 0;
+      font-size: 1rem;
+      line-height: 1.5;
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 0.5rem;
+
+      strong {
+        width: 140px;
+        color: #2c3e50;
+        font-weight: 600;
+      }
+
+      span {
+        flex: 1;
+        color: #34495e;
+      }
+    }
+  }
+
+
+  .back-button {
+    margin-bottom: 2rem;
+
+    button {
+      background-color: #17a2b8;
+      border: none;
+      color: #ffffff;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
+      border-radius: 6px;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #138496;
+      }
+    }
+  }
+
+
+  .edit-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    button {
+      padding: 6px 16px;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      background-color: #d7b000d7;
+      color: #ffffff;
+
+      &:hover {
+        background-color: #a18509d7;
+      }
+    }
+  }
+}
+

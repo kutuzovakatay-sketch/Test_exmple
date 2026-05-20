@@ -1,9 +1,25 @@
-<h2>Детали пользователя</h2>
-<div *ngIf="user; else loading">
-  <p><strong>ФИО:</strong> {{ user.fullName }}</p>
-  <p><strong>Email:</strong> {{ user.email }}</p>
-  <p><strong>Дата регистрации:</strong> {{ user.registrationDate | date }}</p>
-  <button routerLink="/users">Назад к списку</button>
-  <button [routerLink]="['/user-form', user.id]">Редактировать</button>
+<div class="profile-container">
+  <div class="user-details-card">
+    <div class="back-button">
+      <button routerLink="/users"><img src="/arrow.svg" alt="users" width="15" height="15" style="vertical-align: middle; margin-right: 8px;">
+        Назад к списку</button>
+    </div>
+
+    <h2>Профиль пользователя</h2>
+
+    <div *ngIf="user; else loading" class="user-info">
+      <p><strong>ФИО:</strong> <span>{{ user.fullName }}</span></p>
+      <p><strong>Email:</strong> <span>{{ user.email }}</span></p>
+      <p><strong>Дата рождения:</strong> <span>{{ user.dateBirth }}</span></p>
+      <p><strong>Дата регистрации:</strong> <span>{{ user.registrationDate | date }}</span></p>
+    </div>
+
+    <div class="edit-button">
+      <button [routerLink]="['/user-form', user?.id]">Редактировать</button>
+    </div>
+
+    <ng-template #loading>
+      <div class="loading">Загрузка...</div>
+    </ng-template>
+  </div>
 </div>
-<ng-template #loading>Загрузка...</ng-template>

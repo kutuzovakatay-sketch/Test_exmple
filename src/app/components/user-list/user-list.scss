@@ -1,24 +1,111 @@
-.user-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.user-card {
-    padding: .5rem 1rem;
-    border: 1px dashed #ccc;
-    border-radius: 8px;
-  
-}
-button {
-    border: none;
-    margin-right: 8px;
-    border-radius: 4px;
-    background-color: rgba(18, 119, 130, 0.284);
+
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  h2 {
+    margin: 0;
+  }
 }
 
-.add-user-button{
-    padding: 10px;
-    margin-bottom: 20px;
+.add-user-button {
+  padding: 10px 20px;
+  background-color: #04B07B;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background-color: #048f65;
+  }
+
+  img{
+    color: #e0e0e0;
+  }
+}
+
+.user-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .user-info {
+    flex: 1;
+
+    h3 {
+      margin: 0 0 8px 0;
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin: 0 0 12px 0;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    button {
+      background-color: #17a2b8;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 6px 16px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: background 0.2s;
+      min-width: 100px;
+
+      &:hover {
+        background-color: #138496;
+      }
+    }
+  }
+
+  .action-buttons {
     display: flex;
-    justify-content: right;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 20px;
+
+    button {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+      min-width: 100px;
+    }
+
+    button:first-child {
+      background-color: #d7b000d7;
+      color: #ffffff;
+      &:hover { background-color: #baa95b; }
+    }
+
+    button:last-child {
+      background-color: #ef5e63;
+      color: white;
+      &:hover { background-color: #d45d61; }
+    }
+  }
 }

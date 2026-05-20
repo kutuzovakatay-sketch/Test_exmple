@@ -1,13 +1,21 @@
-<h2>User LIST</h2>
-<button class="add-user-button" routerLink="/user-form/new">Добавить пользователя</button>
+<div class="header-actions">
+  <h2><img src="/users_icon.svg" alt="users" width="40" height="40" style="vertical-align: middle; margin-right: 8px;">
+  User LIST</h2>
+  <button class="add-user-button" routerLink="/user-form/new"><img src="/plus.svg" alt="users" width="23" height="23" style="vertical-align: middle; margin-right: 8px;">
+    Добавить пользователя</button>
+</div>
 
 <div class="user-cards">
   <div *ngFor="let user of users" class="user-card">
-    <h3>{{ user.fullName }}</h3>
-    <p>Email: {{ user.email }}</p>
-    <p>Дата регистрации: {{ user.registrationDate | date }}</p>
-    <button [routerLink]="['/user-profile', user.id]">Подробнее</button>
-    <button [routerLink]="['/user-form', user.id]">Редактировать</button>
-    <button (click)="deleteUser(user.id!)">Удалить</button>
+    <div class="user-info">
+      <h3>{{ user.fullName }}</h3>
+      <p>Дата регистрации: {{ user.registrationDate | date }}</p>
+      <button [routerLink]="['/user-profile', user.id]">Подробнее</button>
+    </div>
+    
+    <div class="action-buttons">
+      <button [routerLink]="['/user-form', user.id]">Редактировать</button>
+      <button (click)="deleteUser(user.id!)">Удалить</button>
+    </div>
   </div>
 </div>
